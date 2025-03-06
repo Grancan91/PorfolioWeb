@@ -17,20 +17,30 @@ const scrollToSection = (sectionId) => {
       <img src="../assets/Profile.png" alt="">
       <div>
         <p>Abel López Pérez</p>
-        <p>Web Developer</p>
+        <p>Desarrollador FullStack</p>
       </div>
     </div>
     <div class="links">
-      <a class="nav-item" @click="scrollToSection('home')">Inicio</a>
-      <a class="nav-item" @click="scrollToSection('about')">Sobre Mí</a>
-      <a class="nav-item" @click="scrollToSection('skills')">Skills</a>
+
+      <a class="nav-item">
+        <router-link to="/">Inicio</router-link>
+      </a>
+      <a class="nav-item">
+        <router-link to="/skills">Skills</router-link>
+      </a>
       <a href="" class="nav-item">Projectos</a>
       <a href="" class="nav-item">Educación</a>
     </div>
     <div class="social">
-      <Icon name="IconGithub" clickable />
-      <Icon name="IconGmail" clickable />
-      <Icon name="IconLinkedin" clickable />
+      <a class="w-6 h-6" href="https://github.com/Grancan91">
+        <Icon name="IconGithub" clickable />
+      </a>
+      <a class="w-6 h-6" href="mailto:abl.lopper@gmailcom">
+        <Icon name="IconGmail" clickable />
+      </a>
+      <a class="w-6 h-6" href="https://www.linkedin.com/in/abellopezperez/">
+        <Icon name="IconLinkedin" clickable />
+      </a>
     </div>
   </div>
 </template>
@@ -48,7 +58,7 @@ const scrollToSection = (sectionId) => {
   background-color: var(--background-primary);
 }
 
-#profile > img {
+#profile>img {
   border-radius: 100%;
   border: 1px white solid;
   width: 38px;
@@ -62,8 +72,9 @@ const scrollToSection = (sectionId) => {
   width: 200xp;
   gap: 12px;
 }
-#profile > div > p {
-  font-size: 12px ;
+
+#profile>div>p {
+  font-size: 12px;
 }
 
 .links {
@@ -73,7 +84,7 @@ const scrollToSection = (sectionId) => {
 
 .social {
   display: flex;
-    width: 200xp;
+  width: 200xp;
   gap: 16px;
 }
 

@@ -1,4 +1,3 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
   
   --vt-c-white: #ffffff;
@@ -38,10 +37,12 @@
   --color-text: var(--vt-c-text-light-1);
 
   --primary: #00b8d1;
-
+  --secondary: #52eb71;
   --background-primary: #06101a;
     --background-secondary: #050e17;
   --section-gap: 160px; 
+
+    --font-primary: 'Alice', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,14 +57,6 @@
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
   } 
-}
-
-*,
-*::before,
-*::after {
-   box-sizing: border-box;
-  margin: 0;
-  font-weight: normal; 
 }
 
 html{
