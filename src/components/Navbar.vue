@@ -28,7 +28,9 @@ const scrollToSection = (sectionId) => {
       <a class="nav-item">
         <router-link to="/skills">Skills</router-link>
       </a>
-      <a href="" class="nav-item">Projectos</a>
+      <a class="nav-item">
+        <router-link to="/projects">Projectos</router-link>
+      </a>
       <a href="" class="nav-item">Educación</a>
     </div>
     <div class="social">
@@ -56,6 +58,7 @@ const scrollToSection = (sectionId) => {
   justify-content: space-between;
   position: fixed;
   background-color: var(--background-primary);
+  z-index: 20;
 }
 
 #profile>img {
