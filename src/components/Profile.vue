@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue'
 import profileImg from '@/assets/Profile.png';
 import IconMysql from './icons/IconMysql.vue';
 import IconTailwind from './icons/IconTailwind.vue';
@@ -12,56 +13,53 @@ import IconGmail from './icons/IconGmail.vue';
 import IconLinnkein from './icons/IconLinkedin.vue';
 import Icon from './Icon.vue';
 
+// Variables reactivas para cada botón
+const isHoveringGmail = ref(false)
+const isHoveringLinkedin = ref(false)
 
 </script>
 
 <template>
-  <section id="profile" class="px-[300px] pt-20">
-    <div class="flex pt-8">
-      <img :src="profileImg" alt="Profile" class="w-14 h-14 object-cover rounded-full mr-6 border bg-[var(--primary)]">
-      <div class="flex flex-col justify-center">
-        <h1 class="text-4xl font-[Alice] font-bold">
+  <section id="profile" class="px-[38px] md:px-[100px] lg:px-[200px] xl:px-[300px]">
+    <div class="pt-8 flex flex-col items-center justify-center sm:flex-row sm:justify-start gap-6">
+      <img :src="profileImg" alt="Profile"
+        class="w-24 h-24 sm:w-14 sm:h-14 object-cover rounded-full border bg-[var(--primary)]">
+      <div class="flex flex-col justify-cente">
+        <h1 class="text-3xl sm:text-5xl font-[Alice] font-bold">
           Hola, soy Abel
         </h1>
       </div>
     </div>
-    <p class="text-lg leading-relaxed mt-8 pr-24">+2 Años de Experiencia de <span>
+    <p class="text-lg leading-relaxed mt-8 sm:pr-24">+2 Años de Experiencia de <span>
         Aplicaciones Multiplataforma y Desarrollador Web
         FullStack
       </span>
       de Gran Canaria.
       Especializado en FrontEnd</p>
-    <!--     <h3 class="mb-4 mt-8">Técnologías más usadas</h3>
-    <div class="flex gap-4">
-      <IconVue class="icon" />
-      <IconTailwind class="icon" />
-      <IconJavaScript class="icon" />
-      <IconNode class="icon" />
-      <IconExpress class="icon" />
-      <IconMysql class="icon" />
-      <IconGithub class="icon" />
-      <IconPostman class="icon" />
-    </div> -->
-    <div class="flex mt-8 pb-8 gap-4">
-      <button>Descargar CV</button>
-      <button class="flex gap-3">Contactar
-        <Icon name="IconGmail" clickable class="" />
+
+    <div class="flex mt-8 pb-8 gap-4 justify-center sm:justify-start">
+      <!-- <button>Descargar CV</button> -->
+      <button class="flex gap-3 w-36 justify-center" @mouseover="isHoveringGmail = true"
+        @mouseleave="isHoveringGmail = false">
+        Contactar
+        <Icon name="IconGmail" clickable :isHovering="isHoveringGmail" />
       </button>
-      <button onclick="" class="flex gap-3">Linkedin
-        <Icon name="IconLinkedin" clickable class="" />
+      <button class="flex gap-3 w-36 justify-center" @mouseover="isHoveringLinkedin = true"
+        @mouseleave="isHoveringLinkedin = false">
+        Linkedin
+        <Icon name="IconLinkedin" clickable :isHovering="isHoveringLinkedin" />
       </button>
     </div>
   </section>
 </template>
 
 <style scoped>
-
 .icon {
   width: 24px;
   height: 24px;
 }
 
-span{
+span {
   color: var(--primary);
   font-weight: bold;
 }
@@ -87,6 +85,12 @@ button::before {
   width: 0;
   height: 2px;
   background-color: var(--primary);
+  transition: width 0.6s ease, left 0.6s ease;
+}
+
+button:hover {
+  color: var(--primary);
+  box-shadow: 0 4px 10px rgba(20, 172, 206, 0.3);
   transition: width 0.6s ease, left 0.6s ease;
 }
 

@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps, defineEmits } from 'vue';
+import { ref, defineProps, defineEmits, computed, onMounted, onUnmounted } from 'vue';
 
 const props = defineProps(['activeSection'])
 const emit = defineEmits(['scrollTo'])
@@ -14,13 +14,17 @@ const sections = [
 const scrollTo = (id) => {
   emit('scrollTo', id)
 }
+
 </script>
 
 <template>
   <div id="nav">
-    <div class="links px-8 py-0.5 rounded-full">
-      <a v-for="section in sections" class="nav-item" :class="{ active: activeSection === section.id }"
-        @click="(scrollTo(section.id))">
+    <div class="links px-8 py-0.5 rounded-full" :class="{
+      background: activeSection !== 'profile'
+    }">
+      <a v-for="section in sections" class="nav-item" :class="{
+        active: activeSection === section.id
+      }" @click="(scrollTo(section.id))">
         {{ section.label }}
       </a>
     </div>
@@ -60,10 +64,15 @@ const scrollTo = (id) => {
 .links {
   display: flex;
   gap: 24px;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
   /*   padding: 8px;
   padding-left: 18px;
   padding-right: 18px;
   border-radius: 20px; */
+  cursor: pointer;
+}
+
+.background {
   background-color: rgba(44, 43, 43, 0.45);
   backdrop-filter: blur(46px);
 }

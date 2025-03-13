@@ -2,11 +2,11 @@
 </script>
 
 <template>
-  <section id="experience" class="px-[300px] my-20">
+  <section id="experience" class="px-[18px] md:px-[100px] lg:px-[100px] xl:px-[300px]">
     <h2>Experiencia Laboral</h2>
     <div class="mt-8 h-full border-l-2 border-[var(--primary)] relative">
       <div class="h-3 w-3 rounded-full bg-white left-[-7px] mt-4 absolute"></div>
-      <div class="pl-8 grid grid-cols-2">
+      <div class="pl-8 grid sm:grid-cols-2">
         <div>
           <h3 class="text-2xl text-[var(--primary)]">Reboot Academy</h3>
           <p>Analista Programador</p>
@@ -15,16 +15,16 @@
         </div>
 
         <div>
-          <p class="!text-[16px]">Participaba en el desarrollo de proyectos innovadores como Edukami.ai e impartia
-            clases en los Bootcamps de FullStack y E-Comerce, aportando un enfoque dinámico y entretenido que ayudó a
-            los alumnos a dar lo mejor de si mismos.</p>
+          <p class="!text-[16px] mt-6 sm:mt-0">Participaba en el desarrollo de proyectos innovadores como Edukami.ai e
+            impartia
+            clases en los Bootcamps de FullStack y E-Comerce, aportando un enfoque dinámico y entretenido.</p>
         </div>
       </div>
 
 
 
       <div class="h-3 w-3 rounded-full bg-white left-[-7px] absolute mt-12"></div>
-      <div class="pl-8 grid grid-cols-2 mt-8">
+      <div class="pl-8 grid sm:grid-cols-2 mt-8">
         <div>
           <h3 class="text-2xl text-[var(--primary)]">Martinez Cano Canarias</h3>
           <p>Consultor de Software</p>
@@ -32,12 +32,15 @@
         </div>
 
         <div>
-          <p class="!text-[16px]">Recopilaba información del cliente para adaptarlo al software en desarrollo asegurando que cumplia con las necesidades del cliente. Así como analizando las funciones y el desempeño de la misma.</p>
+          <p class="!text-[16px] mt-6 sm:mt-0">Recopilaba información del cliente y sus necesidades para guiar al equipo
+            de
+            desarrollo asegurando
+            que el software cumplia con los requerimientos. Así como analizando las funciones y el desempeño del mismo.
+          </p>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

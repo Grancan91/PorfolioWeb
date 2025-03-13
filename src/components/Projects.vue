@@ -4,31 +4,44 @@ import Icon from './Icon.vue';
 </script>
 
 <template>
-  <section id="projects">
-    <h2 class="pl-[300px] mt-20">Proyectos</h2>
+  <section id="projects" class="px-[18px] md:px-[100px] lg:px-[100px] xl:px-[300px]">
+    <h2 class="text-3xl">Proyectos</h2>
 
-    <div class="flex py-4 px-[300px]">
-
-
+    <div class="flex flex-col py-4 sm:flex-row">
       <img src="../assets/projects/galaga.png" alt="" class="w-full h-56 rounded-2xl">
-
-
-      <div class="w-fit ml-4">
-
-        <h2 class="pl-6">Demo Galaga</h2>
-        <div class="flex gap-4 pl-6">
+      <div class="w-fit sm:ml-4">
+        <h2 class="py-2 sm:pl-6 text-2xl">Demo Galaga</h2>
+        <p class="!text-[16px] sm:pl-6 sm:mt-4">Demo del Galaga para poner en practica el manejo de HTML, CSS y
+          JavaScrpt
+          Vanilla
+        </p>
+        <div class="flex gap-4 sm:pl-6">
           <Icon name="IconHtml" size="24" class="mt-3" />
           <Icon name="IconCss" size="24" class="mt-3 " />
           <Icon name="IconJavaScript" size="24" class="mt-3" />
         </div>
-        <p class="!text-[16px] pl-6 mt-4">Demo del Galaga para poner en practica el manejo de HTML, CSS y JavaScrpt Vanilla
-        </p>
-
-
-
       </div>
-
     </div>
+
+
+    <div class="flex flex-col py-4 sm:flex-row">
+      <img src="../assets/projects/galaga.png" alt="" class="w-full h-56 rounded-2xl">
+      <div class="w-fit sm:ml-4">
+        <h2 class="py-2 sm:pl-6 text-2xl">Demo Galaga</h2>
+        <p class="!text-[16px] sm:pl-6 sm:mt-4">Demo del Galaga para poner en practica el manejo de HTML, CSS y
+          JavaScrpt
+          Vanilla
+        </p>
+        <div class="flex gap-4 sm:pl-6">
+          <Icon name="IconHtml" size="24" class="mt-3" />
+          <Icon name="IconCss" size="24" class="mt-3 " />
+          <Icon name="IconJavaScript" size="24" class="mt-3" />
+        </div>
+      </div>
+    </div>
+
+    
+
 
   </section>
 </template>

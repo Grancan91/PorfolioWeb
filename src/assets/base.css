@@ -3,7 +3,7 @@
 :root {
   --primary: #49eaff;
   --dark-primary: #06101a;
-  --secondary-bg: rgba(44, 43, 43, 0.45);
+  --secondary-bg: rgba(44, 43, 43, 0.85);
   --font-primary: 'Alice', sans-serif;
   --amr-darkgreen: #093834;
   --amr-lime: #66d37e;
@@ -43,7 +43,7 @@ body {
 }
 
 html {
-  background: linear-gradient(190deg, #161831, #060c15);
+  background: linear-gradient(190deg, #2a2c56, #0a1526);
 }
 
 body {
@@ -54,20 +54,23 @@ body {
 }
 
 p {
-  font-size: var(--font-size-body);
-  line-height: var(--line-height-body);
+/*   font-size: var(--font-size-body);
+ */  line-height: var(--line-height-body);
   color: var(--color-text-dark);
+  cursor: default;
 }
 
 h1 {
-  font-size: var(--font-size-heading);
+  /* font-size: var(--font-size-heading); */
   line-height: var(--line-height-heading);
   color: var(--color-text-dark);
   font-weight: bold;
+  cursor: default;
 }
 
 h2 {
-  font-size: var(--font-size-heading-2);
-  line-height: var(--line-height-heading-2);
+/*   font-size: var(--font-size-heading-2);
+ */  line-height: var(--line-height-heading-2);
   color: var(--color-text-dark);
+  cursor: default;
 }

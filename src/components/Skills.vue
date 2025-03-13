@@ -19,7 +19,7 @@ const searchResult = computed(() => {
 </script>
 
 <template>
-  <section id="skills" class="px-[300px] py-8">
+  <section id="skills" class="px-[18px] md:px-[100px] lg:px-[100px] xl:px-[300px]">
 
     <!--   <div class="flex justify-end pt-4">
       <input type="search" name="search" id="" placeholder="Buscar Skill" v-model="search" class="w-1/3 h-8 rounded-md">
