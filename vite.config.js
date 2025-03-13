@@ -12,7 +12,7 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss(),
   ],
-  base: '/Portfolio/', // 👈 Usa el nombre exacto de tu repositorio
+  base: '/PorfolioWeb/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
