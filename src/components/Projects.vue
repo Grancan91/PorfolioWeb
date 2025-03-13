@@ -4,26 +4,27 @@ import Icon from './Icon.vue';
 </script>
 
 <template>
-  <section>
+  <section id="projects">
+    <h2 class="pl-[300px] mt-20">Proyectos</h2>
 
-    <div class="flex py-4">
+    <div class="flex py-4 px-[300px]">
 
 
-        <img src="../assets/projects/galagagold.png" alt="" class="w-[500px]">
-     
+      <img src="../assets/projects/galaga.png" alt="" class="w-full h-56 rounded-2xl">
+
+
       <div class="w-fit ml-4">
 
-        <h1 class="text-2xl py-4">Nombre del Proyecto</h1>
-
-        <p class="text-md">Descripción del proyecto Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Suscipit perspiciatis veritatis illo voluptatum reprehenderit voluptate, nesciunt sapiente fugit obcaecati
-          minima porro. Mollitia necessitatibus cum dignissimos facilis temporibus, doloribus minus quisquam!</p>
-        
-          <div class="flex gap-4 justify-end">
-          <Icon name="IconHtml" size="36" class="mt-3" />
-          <Icon name="IconCss" size="36" class="mt-3 " />
-          <Icon name="IconJavaScript" size="36" class="mt-3" />
+        <h2 class="pl-6">Demo Galaga</h2>
+        <div class="flex gap-4 pl-6">
+          <Icon name="IconHtml" size="24" class="mt-3" />
+          <Icon name="IconCss" size="24" class="mt-3 " />
+          <Icon name="IconJavaScript" size="24" class="mt-3" />
         </div>
+        <p class="!text-[16px] pl-6 mt-4">Demo del Galaga para poner en practica el manejo de HTML, CSS y JavaScrpt Vanilla
+        </p>
+
+
 
       </div>
 

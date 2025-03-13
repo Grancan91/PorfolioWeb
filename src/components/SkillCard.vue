@@ -14,18 +14,18 @@ const colors = ["bg-amber-400", "bg-green-500", "bg-red-500"];
 </script>
 
 <template>
-  <section class="shadow-lg hover:shadow-xl bg-gray-900 rounded-xl flex flex-col items-center p-3 w-44 transition-shadow">
+  <div class="shadow-lg hover:shadow-xl bg-[var(--secondary-bg)] rounded-xl flex flex-col items-center p-1 w-32 transition-shadow">
     
     <div class="w-full flex justify-end items-start">
-      <p :class="`px-3 text-xs font-semibold text-black rounded-full ${colors[level - 1]}`">
+  <!--     <p :class="`px-3 text-xs font-semibold text-black rounded-full ${colors[level - 1]}`">
         {{ levels[level - 1] }}
-      </p>
+      </p> -->
     </div>
-    <Icon :name="icon" size="56" class="mt-3 text-gray-700" />
+    <Icon :name="icon" size="56" class="mt-2 text-gray-700" />
 
-    <h1 class="text-xl font-semibold mt-3">{{ name }}</h1>
+    <p class="text-xl font-semibold mt-1">{{ name }}</p>
 
-  </section>
+  </div>
 </template>
 
 <style scoped>

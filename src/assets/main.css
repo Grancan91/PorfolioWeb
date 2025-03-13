@@ -1,6 +1,3 @@
 @import './base.css';
 @import "tailwindcss";
 
-#app {
-scroll-behavior: smooth;
-}

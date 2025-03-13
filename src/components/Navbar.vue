@@ -1,47 +1,27 @@
 <script setup>
-import IconGmail from './icons/IconGmail.vue';
-import IconLinnkein from './icons/IconLinkedin.vue';
-import IconGithub from './icons/IconGithub.vue';
-import Icon from './Icon.vue';
+import { defineProps, defineEmits } from 'vue';
 
-const scrollToSection = (sectionId) => {
-  const element = document.getElementById(sectionId);
-  element?.scrollIntoView({ behavior: 'smooth' });
-};
+const props = defineProps(['activeSection'])
+const emit = defineEmits(['scrollTo'])
+
+const sections = [
+  { id: 'profile', label: 'Inicio' },
+  { id: 'experience', label: 'Experiencia' },
+  { id: 'skills', label: 'Tecnologías' },
+  { id: 'projects', label: 'Proyectos' },
+]
+
+const scrollTo = (id) => {
+  emit('scrollTo', id)
+}
 </script>
 
 <template>
-
   <div id="nav">
-    <div id="profile">
-      <img src="../assets/Profile.png" alt="">
-      <div>
-        <p>Abel López Pérez</p>
-        <p>Desarrollador FullStack</p>
-      </div>
-    </div>
-    <div class="links">
-
-      <a class="nav-item">
-        <router-link to="/">Inicio</router-link>
-      </a>
-      <a class="nav-item">
-        <router-link to="/skills">Skills</router-link>
-      </a>
-      <a class="nav-item">
-        <router-link to="/projects">Projectos</router-link>
-      </a>
-      <a href="" class="nav-item">Educación</a>
-    </div>
-    <div class="social">
-      <a class="w-6 h-6" href="https://github.com/Grancan91">
-        <Icon name="IconGithub" clickable />
-      </a>
-      <a class="w-6 h-6" href="mailto:abl.lopper@gmailcom">
-        <Icon name="IconGmail" clickable />
-      </a>
-      <a class="w-6 h-6" href="https://www.linkedin.com/in/abellopezperez/">
-        <Icon name="IconLinkedin" clickable />
+    <div class="links px-8 py-0.5 rounded-full">
+      <a v-for="section in sections" class="nav-item" :class="{ active: activeSection === section.id }"
+        @click="(scrollTo(section.id))">
+        {{ section.label }}
       </a>
     </div>
   </div>
@@ -49,15 +29,12 @@ const scrollToSection = (sectionId) => {
 
 <style scoped>
 #nav {
-  height: 64px;
-  padding: 0 200px;
-  top: 0;
+  top: 8px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
-  background-color: var(--background-primary);
   z-index: 20;
 }
 
@@ -83,6 +60,12 @@ const scrollToSection = (sectionId) => {
 .links {
   display: flex;
   gap: 24px;
+  /*   padding: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 20px; */
+  background-color: rgba(44, 43, 43, 0.45);
+  backdrop-filter: blur(46px);
 }
 
 .social {
@@ -99,6 +82,7 @@ const scrollToSection = (sectionId) => {
   color: white;
   font-size: 1rem;
   height: 34px;
+
 }
 
 .nav-item::before {
@@ -115,5 +99,9 @@ const scrollToSection = (sectionId) => {
 .nav-item:hover::before {
   left: 0;
   width: 100%;
+}
+
+.active {
+  color: aqua;
 }
 </style>

@@ -19,11 +19,6 @@
       "name": "PHP",
       "icon": "IconPhp",
       "level": 1
-    },
-    {
-      "name": "SQL",
-      "icon": "IconMysql",
-      "level": 2
     }
   ],
   "frameworks": [
