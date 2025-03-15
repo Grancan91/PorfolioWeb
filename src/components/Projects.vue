@@ -1,6 +1,5 @@
 <script setup>
 import Icon from './Icon.vue';
-
 </script>
 
 <template>
@@ -8,7 +7,7 @@ import Icon from './Icon.vue';
     <h2 class="text-3xl">Proyectos</h2>
 
     <div class="flex flex-col py-4 sm:flex-row">
-      <img src="../assets/projects/galaga.png" alt="" class="w-full h-56 rounded-2xl">
+      <img src="../assets/projects/Galaga-Demo.webp" alt="" class="w-[700px] h-[300px] rounded-2xl z-10">
       <div class="w-fit sm:ml-4">
         <h2 class="py-2 sm:pl-6 text-2xl">Demo Galaga</h2>
         <p class="!text-[16px] sm:pl-6 sm:mt-4">Demo del Galaga para poner en practica el manejo de HTML, CSS y
@@ -25,7 +24,7 @@ import Icon from './Icon.vue';
 
 
     <div class="flex flex-col py-4 sm:flex-row">
-      <img src="../assets/projects/galaga.png" alt="" class="w-full h-56 rounded-2xl">
+      <img src="../assets/projects/Feel-Home.webp" alt="" class="w-[700px] h-[300px] rounded-2xl z-10">
       <div class="w-fit sm:ml-4">
         <h2 class="py-2 sm:pl-6 text-2xl">Demo Galaga</h2>
         <p class="!text-[16px] sm:pl-6 sm:mt-4">Demo del Galaga para poner en practica el manejo de HTML, CSS y
@@ -39,13 +38,5 @@ import Icon from './Icon.vue';
         </div>
       </div>
     </div>
-
-    
-
-
   </section>
 </template>
-
-<style scoped>
- 
-</style>

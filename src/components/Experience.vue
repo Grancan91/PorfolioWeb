@@ -15,7 +15,7 @@
         </div>
 
         <div>
-          <p class="!text-[16px] mt-6 sm:mt-0">Participaba en el desarrollo de proyectos innovadores como Edukami.ai e
+          <p class="!text-[16px] mt-6 sm:mt-0">Participé en el desarrollo de un proyecto innovador como Edukami.ai e
             impartia
             clases en los Bootcamps de FullStack y E-Comerce, aportando un enfoque dinámico y entretenido.</p>
         </div>

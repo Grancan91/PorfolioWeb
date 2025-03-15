@@ -14,7 +14,7 @@ const colors = ["bg-amber-400", "bg-green-500", "bg-red-500"];
 </script>
 
 <template>
-  <div class="shadow-lg hover:shadow-xl bg-[var(--secondary-bg)] rounded-xl flex flex-col items-center p-1 w-32 transition-shadow">
+  <div class="shadow-lg hover:shadow-xl bg-[var(--secondary-bg)] rounded-xl flex flex-col items-center p-1 w-10 sm:w-32 transition-shadow">
     
     <div class="w-full flex justify-end items-start">
   <!--     <p :class="`px-3 text-xs font-semibold text-black rounded-full ${colors[level - 1]}`">
