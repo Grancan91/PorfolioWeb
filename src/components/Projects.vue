@@ -23,7 +23,7 @@ const projects = [
     ]
   },
   {
-    name: "Feel",
+    name: "Feel Front & Backend",
     description: 'Feel es una aplicación para el seguimiento del estado emocional del paciente, el cual tendrá asignado un profesional de la salud mental, que tendra acceso a los reportes generados por la app para poder mejorar la atención del paciente.',
     img: "./projects/Feel-Home.webp",
     stack: [
@@ -111,12 +111,12 @@ const projects = [
 </script>
 
 <template>
-  <section id="projects" class="px-[18px] md:px-[100px] lg:px-[100px] xl:px-[300px]">
+  <section id="projects" class="px-[18px] md:px-[100px] lg:px-[100px] xl:px-[250px]">
     <h2 class="text-3xl">Proyectos</h2>
 
     <div v-for="project in projects" class="flex flex-col py-4 sm:flex-row">
-      <img :src="project.img" alt="" class="max-w-[700px] h-[300px] rounded-2xl z-10">
-      <div class="w-fit sm:ml-4">
+      <img :src="project.img" alt="" class="max-w-[500px] rounded-2xl z-10">
+      <div class=" sm:ml-4">
         <h2 class="py-2 sm:pl-6 text-2xl">{{ project.name }}</h2>
         <p class="!text-[16px] sm:pl-6 sm:mt-4">{{ project.description }}
         </p>
