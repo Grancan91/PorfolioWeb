@@ -24,7 +24,7 @@ const searchResult = computed(() => {
     <!--   <div class="flex justify-end pt-4">
       <input type="search" name="search" id="" placeholder="Buscar Skill" v-model="search" class="w-1/3 h-8 rounded-md">
     </div> -->
-    <h2 class="mb-8">Tecnologías Principales</h2>
+    <h2 class="mb-8 text-3xl">Tecnologías Principales</h2>
 
     <!-- <p v-if="searchResult.languages.length > 0" class="text-xl py-2">Lenguajes</p> -->
     <div class="flex flex-wrap gap-4 justify-center">

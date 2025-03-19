@@ -1,3 +1,3 @@
 <template>
-  <div class="py-20"></div>
+  <div class="py-10"></div>
 </template>

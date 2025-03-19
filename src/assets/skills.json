@@ -40,15 +40,20 @@
   ],
   "libraries": [
     {
+      "name": "Tailwind",
+      "icon": "IconTailwind",
+      "level": 2
+    },
+    {
       "name": "Node.Js",
       "icon": "IconNode",
       "level": 2
     },
-        {
-          "name": "Express.Js",
-          "icon": "IconExpress",
-          "level": 2
-        },
+    {
+      "name": "Express.Js",
+      "icon": "IconExpress",
+      "level": 2
+    },
     {
       "name": "Pinia",
       "icon": "IconPinia",
@@ -67,18 +72,16 @@
   ],
   "databases": [
     {
-      
-        "name": "MongoDB",
-        "icon": "IconMongoDb",
-        "level": 2
-      },
-        {
-          "name": "MySql",
-          "icon": "IconMysql",
-          "level": 2
-        }
-  ]
-  ,
+      "name": "MongoDB",
+      "icon": "IconMongoDb",
+      "level": 2
+    },
+    {
+      "name": "MySql",
+      "icon": "IconMysql",
+      "level": 2
+    }
+  ],
   "others": [
     {
       "name": "Docker",

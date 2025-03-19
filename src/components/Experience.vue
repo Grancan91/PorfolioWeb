@@ -3,7 +3,7 @@
 
 <template>
   <section id="experience" class="px-[18px] md:px-[100px] lg:px-[100px] xl:px-[300px]">
-    <h2>Experiencia Laboral</h2>
+    <h2 class="text-3xl">Experiencia Laboral</h2>
     <div class="mt-8 h-full border-l-2 border-[var(--primary)] relative">
       <div class="h-3 w-3 rounded-full bg-white left-[-7px] mt-4 absolute"></div>
       <div class="pl-8 grid sm:grid-cols-2">

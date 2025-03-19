@@ -23,7 +23,7 @@ const isHoveringLinkedin = ref(false)
   <section id="profile" class="px-[38px] md:px-[100px] lg:px-[200px] xl:px-[300px]">
     <div class="pt-8 flex flex-col items-center justify-center sm:flex-row sm:justify-start gap-6">
       <img :src="profileImg" alt="Profile"
-        class="w-24 h-24 sm:w-14 sm:h-14 object-cover rounded-full border bg-[var(--primary)]">
+        class="w-28 h-28 object-cover rounded-full border bg-[var(--primary)]">
       <div class="flex flex-col justify-cente">
         <h1 class="text-3xl sm:text-5xl font-[Alice] font-bold">
           Hola, soy Abel
@@ -31,10 +31,10 @@ const isHoveringLinkedin = ref(false)
       </div>
     </div>
     <p class="text-lg leading-relaxed mt-8 sm:pr-24">+2 Años de Experiencia de <span>
-        Aplicaciones Multiplataforma y Desarrollador Web
-        FullStack
+        Desarrollador Web
+        FullStack.
       </span>
-      de Gran Canaria.
+      
       Especializado en FrontEnd</p>
 
     <div class="flex mt-8 pb-8 gap-4 justify-center sm:justify-start">
