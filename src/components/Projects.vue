@@ -114,7 +114,7 @@ const projects = [
   <section id="projects" class="px-[18px] md:px-[100px] lg:px-[100px] xl:px-[250px]">
     <h2 class="text-3xl">Proyectos</h2>
 
-    <div v-for="project in projects" class="flex flex-col py-4 sm:flex-row">
+    <div v-for="project in projects" class="flex flex-col py-4 sm:flex-row card bg-red-200 mb-4">
       <img :src="project.img" alt="" class="max-w-[500px] rounded-2xl z-10">
       <div class=" sm:ml-4">
         <h2 class="py-2 sm:pl-6 text-2xl">{{ project.name }}</h2>

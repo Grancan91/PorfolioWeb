@@ -8,16 +8,17 @@ import Skills from './components/Skills.vue';
 import Projects from './components/Projects.vue';
 import Space from './components/Space.vue';
 
-const sections = ref([])
+
+/* const sections = ref([])
 const activeSection = ref('profile')
 
 const scrollToSection = (id) => {
   const section = document.getElementById(id)
   section.scrollIntoView({ behavior: 'smooth' })
   activeSection.value = section.id
-}
+} */
 
-onMounted(() => {
+/* onMounted(() => {
   sections.value = document.querySelectorAll('section')
 
   const observer = new IntersectionObserver((entries) => {
@@ -32,11 +33,11 @@ onMounted(() => {
   });
 
   sections.value.forEach(section => observer.observe(section));
-})
+}) */
 </script>
 
 <template>
-  <Navbar :activeSection="activeSection" @scrollTo="scrollToSection" />
+  <Navbar/>
   <MatrixEffect />
   <Space />
   <Profile />

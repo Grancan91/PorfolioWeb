@@ -11,23 +11,19 @@ const sections = [
   { id: 'projects', label: 'Proyectos' },
 ]
 
-const scrollTo = (id) => {
+/* const scrollTo = (id) => {
   emit('scrollTo', id)
-}
+} */
 
 </script>
 
 <template>
   <div id="nav">
-    <div class="links px-8 py-0.5 rounded-full" :class="{
-      background: activeSection !== 'profile'
-    }">
-      <a v-for="section in sections" class="nav-item" :class="{
-        active: activeSection === section.id
-      }" @click="(scrollTo(section.id))">
+    <scrollactive class="links px-8 py-0.5 rounded-full">
+      <a v-for="section in sections" :key="section.id" :href="'#' + section.id" class="scrollactive-item">
         {{ section.label }}
       </a>
-    </div>
+    </scrollactive>
   </div>
 </template>
 
