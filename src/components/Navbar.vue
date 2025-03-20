@@ -109,4 +109,11 @@ const sections = [
 .active {
   color: aqua;
 }
+
+.scrollactive-item {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
 </style>
